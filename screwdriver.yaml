@@ -1,0 +1,8 @@
+jobs:
+  test:
+    image: node6
+    steps:
+      - echo: echo hello
+    annotations:
+      - freezeWindows: 
+        - "* 11-12 ? * *"
