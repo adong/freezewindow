@@ -5,7 +5,7 @@ jobs:
       - echo: echo hello
     annotations:
       freezeWindows: 
-        - "* 11-12 ? * *"
+        - "* 18-19 ? * *"
     requires:
         - ~pr
         - ~commit
