@@ -2,7 +2,7 @@ jobs:
   test:
     image: node:6
     steps:
-      - echo: echo hello
+      - time: node time.js
     annotations:
       freezeWindows: 
         - "* 18-19 ? * *"
