@@ -1,6 +1,6 @@
 jobs:
   test:
-    image: node6
+    image: node:6
     steps:
       - echo: echo hello
     annotations:
