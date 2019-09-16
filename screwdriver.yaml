@@ -9,5 +9,5 @@ jobs:
   test:
     steps:
       - time: node time.js
-    freezeWindows: ['* 19-20 ? * *']
+    freezeWindows: ['* 20-21 ? * *']
     requires: [blah]
