@@ -4,5 +4,8 @@ jobs:
     steps:
       - echo: echo hello
     annotations:
-      - freezeWindows: 
+      freezeWindows: 
         - "* 11-12 ? * *"
+    requires:
+        - ~pr
+        - ~commit
