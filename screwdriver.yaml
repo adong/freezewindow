@@ -3,9 +3,5 @@ jobs:
     image: node:6
     steps:
       - time: node time.js
-    annotations:
-      freezeWindows: 
-        - "* 18-19 ? * *"
-    requires:
-        - ~pr
-        - ~commit
+    freezeWindows: ['* 18-19 ? * *']
+    requires: [~pr, ~commit]
