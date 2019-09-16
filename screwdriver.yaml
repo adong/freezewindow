@@ -1,8 +1,13 @@
 #test freezewindow with disabled
+shared:
+  image: node:6
 jobs:
+  blah:
+    steps:
+      - echo: echo hi
+    requires: [~pr, ~commit]
   test:
-    image: node:6
     steps:
       - time: node time.js
     freezeWindows: ['* 18-19 ? * *']
-    requires: [~pr, ~commit]
+    requires: [blah]
