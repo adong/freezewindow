@@ -2,12 +2,8 @@
 shared:
   image: node:6
 jobs:
-  blah:
-    steps:
-      - echo: echo hi
-    requires: [~pr, ~commit]
   test:
     steps:
       - time: node time.js
-   freezeWindows: ['* 20-21 ? * *']
-    requires: [blah]
+    freezeWindows: ['* 20-21 ? * *']
+    requires: [~pr, ~commit]
