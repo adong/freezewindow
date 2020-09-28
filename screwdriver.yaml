@@ -4,5 +4,5 @@ jobs:
   test:
     steps:
       - time: node time.js
-    freezeWindows: ['* 20-23 ? * *']
+    freezeWindows: ['* 2-23 ? * *']
     requires: [~pr, ~commit]
